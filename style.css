@@ -1,0 +1,118 @@
+body{
+    background: rgb(249,238,255);
+    background: linear-gradient(0deg, rgba(249,238,255,1) 0%, rgba(251,236,255,1) 64%, rgba(46,23,51,1) 65%, rgba(48,21,52,1) 100%);    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat:no-repeat;
+    height: 150vh;
+}
+.box{
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: rgb(250, 247, 248);
+    border-radius: 20px;
+    margin-top: 0px;
+    flex-direction: column;
+    padding: 20px;
+}
+.heading{
+    width: 500px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+    padding-top: 35px;
+}
+.heading img{
+    width: 40px;
+    height: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.heading h2{
+    font-size: 30px;
+    font-size: 30px;
+    font-weight: 800;
+    margin-top: 5px;
+    color: rgb(56, 21, 88);
+}
+.question , .anotherQ{
+    width: 500px;
+    height: auto;
+    margin-left: 20px;
+}
+.question button,.anotherQ button{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    display: inline-flex;
+    margin-left: 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: rgb(50, 12, 85);
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 0px 2px 5px rgb(50, 12, 85);
+}
+.question h3 ,.anotherQ h3{
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Nunito", sans-serif;
+}
+.question p , .anotherQ p{
+    font-size: 12px;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;    
+    color: rgb(155, 152, 152);
+    line-height: 22px;
+    padding: 10px;
+    margin-right: 5px;
+}
+hr{
+    color: rgb(235, 231, 231);
+    width: 90%;
+}
+.hidden{
+    display: none;
+}
+.answer_showen{
+    display: none;
+}
+.visible{
+    display: block;
+}
+@media screen and (min-width: 300px) and (max-width: 800px) {
+    body{
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+      width: 250px;
+    }
+    .question , .anotherQ{
+        width: 200px;
+        height: auto;
+        margin-left: 20px;
+    }
+    .question button,.anotherQ button{
+        width: 10px;
+        height: 10px;
+        cursor: pointer;
+        display: inline-flex;
+        margin-left: 6px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        border: none;
+        color: white;
+        background-color: rgb(50, 12, 85);
+        font-size: 9px;
+        font-weight: 600;
+    }
+  }
